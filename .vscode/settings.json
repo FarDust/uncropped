@@ -1,0 +1,13 @@
+{
+  "python.pythonPath": "D:\\Users\\gabri\\AppData\\Local\\pypoetry\\Cache\\virtualenvs\\panoramic-image-reconstruction-n4Qeht8p-py3.8\\Scripts\\python.exe",
+  "cSpell.words": [
+    "Keypoints",
+    "RANSAC",
+    "imread",
+    "imwrite"
+  ],
+  "python.testing.promptToConfigure": false,
+  "python.testing.pytestEnabled": false,
+  "python.testing.unittestEnabled": false,
+  "python.testing.nosetestsEnabled": false
+}

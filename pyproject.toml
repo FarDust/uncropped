@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "panoramic-image-reconstruction"
+version = "0.1.0"
+description = "cli app to create a panoramic image from several related images."
+authors = ["Gabriel Faundez <gnfaundez@uc.cl>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+opencv-python = "^4.5.1"
+numpy = "^1.20.2"
+click = "^7.1.2"
+alive-progress = "^1.6.2"
+spinners = "^0.0.24"
+halo = "^0.0.31"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.3"
+flake8 = "^3.9.0"
+black = {version = "^20.8b1", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
