@@ -17,7 +17,7 @@ images = list()
     "--save_files",
     "-s",
     "save_files",
-    flag_value="debug",
+    flag_value=True,
     default=False,
     help="Set if store intermediate images files",
 )
@@ -25,20 +25,20 @@ images = list()
     "--debug",
     "-d",
     "debug",
-    flag_value="debug",
+    flag_value=True,
     default=False,
     help="Activate debug prompts",
 )
 @option(
     "--output",
     "-o",
-    "output",
+    "output_dir",
     default="./",
     help="Defines output directory, set as current directory as default",
 )
-def cli_entrypoint(path_str, output_file_name, debug, save_files, output):
+def cli_entrypoint(path_str, output_file_name, debug, save_files, output_dir):
     path = Path(path_str).absolute()
-    output_path = Path(output).absolute()
+    output_path = Path(output_dir).absolute()
     output_file_name = Path(output_file_name).name
     assert path.exists
     if os.path.isdir(path):
