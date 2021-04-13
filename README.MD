@@ -1,5 +1,18 @@
 # Panoramic Image Reconstruction
 
+## General idea
+
+-  use source img + depth data from Deep-AI + 
+
+## Traditional algorithm
+
+As described in  \[[7](#sources)\]
+
+- **Step 1:** Detecting keypoints (DoG, Harris, etc.) and extracting local invariant descriptors(SIFT, SURF, ORBFASTBRIEF, etc.) from multiple input images
+- **Step 2:** Matching the feature descriptors between the multiple images
+- **Step 3:** Estimating the homography matrixes using the set of matched features of eachpair images
+- **Step 4:** The warping transformation image using the homography matrix of each pairimages, which are obtained from previous step
+
 ## Concepts
 
 - Keypoints
@@ -11,9 +24,11 @@
 
 ## Sources
 
-- [image-stitching](https://www.pyimagesearch.com/2018/12/17/image-stitching-with-opencv-and-python/)
-- [panoramic-reconstruction](https://medium.com/analytics-vidhya/panoramic-reconstruction-ab9fa35a38ef)
-- [image-stitching-deep-learning](https://www.kaggle.com/viswatejag/image-stiching-using-deeplearning)
-- [depth-estimation](https://paperswithcode.com/task/depth-estimation)
-- [image-stitching-datasets](https://paperswithcode.com/task/image-stitching)
-- [image-inPainting](https://github.com/1900zyh/Awesome-Image-Inpainting)
+1. [image-stitching](https://www.pyimagesearch.com/2018/12/17/image-stitching-with-opencv-and-python/)
+2. [panoramic-reconstruction](https://medium.com/analytics-vidhya/panoramic-reconstruction-ab9fa35a38ef)
+3. [image-stitching-deep-learning](https://www.kaggle.com/viswatejag/image-stiching-using-deeplearning)
+4. [depth-estimation](https://paperswithcode.com/task/depth-estimation)
+5. [image-stitching-datasets](https://paperswithcode.com/task/image-stitching)
+6. [image-inPainting](https://github.com/1900zyh/Awesome-Image-Inpainting)
+7. [deep-image-stitching](https://www.researchgate.net/publication/339671421_Deep_Feature_Extraction_for_Panoramic_Image_Stitching)
+8. [keras-ResNet](https://keras.io/api/applications/resnet/)
