@@ -1,8 +1,11 @@
 # Panoramic Image Reconstruction
 
+[![Build Status](https://travis-ci.com/FarDust/uncropped.svg?branch=main)](https://travis-ci.com/FarDust/uncropped)
+
 ## General idea
 
--  use source img + depth data from Deep-AI + 
+- Use source img + depth data from Deep-AI + homography matrix
+- Then stitching the image
 
 ## Traditional algorithm
 
@@ -10,8 +13,8 @@ As described in  \[[7](#sources)\]
 
 - **Step 1:** Detecting keypoints (DoG, Harris, etc.) and extracting local invariant descriptors(SIFT, SURF, ORBFASTBRIEF, etc.) from multiple input images
 - **Step 2:** Matching the feature descriptors between the multiple images
-- **Step 3:** Estimating the homography matrixes using the set of matched features of eachpair images
-- **Step 4:** The warping transformation image using the homography matrix of each pairimages, which are obtained from previous step
+- **Step 3:** Estimating the homography matrixes using the set of matched features of each pair images
+- **Step 4:** The warping transformation image using the homography matrix of each pair images, which are obtained from previous step
 
 ## Concepts
 
