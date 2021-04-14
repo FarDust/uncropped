@@ -1,3 +1,18 @@
 {
-  "recommendations": []
+  "recommendations": [
+    "streetsidesoftware.code-spell-checker",
+    "naumovs.color-highlight",
+    "github.vscode-pull-request-github",
+    "eamodio.gitlens",
+    "shd101wyy.markdown-preview-enhanced",
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "streetsidesoftware.code-spell-checker-spanish",
+    "visualstudioexptteam.vscodeintellicode",
+    "jumpinjackie.vscode-map-preview",
+    "gruntfuggly.todo-tree",
+    "vs-publisher-1448185.keyoti-changeallendoflinesequence"
+  ]
 }
